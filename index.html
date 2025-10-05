@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jaycee Gourmet Restaurant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Jaycee Gourmet Restaurant</h1>
+    <p>Authentic Nigerian Cuisine in Benin City</p>
+  </header>
+
+  <section>
+    <h2>Welcome</h2>
+    <p>Delighting you with the rich, authentic taste of traditional Nigerian cuisine — freshly prepared and served with love.</p>
+    <a class="btn" href="#menu">View Menu</a>
+  </section>
+
+  <section id="menu">
+    <h2>Our Menu</h2>
+
+    <h3>Soups & Swallows</h3>
+    <div class="menu-item">
+      <img src="https://images.unsplash.com/photo-1562967916-eb82221dfb30?auto=format&fit=crop&w=400&q=80" alt="Egusi Soup" />
+      <p>Egusi Soup with Pounded Yam – ₦7,500 <button class="order-btn">Order</button></p>
+    </div>
+
+    <h3>Rice Specials</h3>
+    <div class="menu-item">
+      <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=400&q=80" alt="Jollof" />
+<p>Jollof Rice & Grilled Chicken – ₦8,000 <button class="order-btn">Order</button></p>
+    </div>
+
+    <h3>Drinks</h3>
+    <div class="menu-item">
+      <img src="https://images.unsplash.com/photo-1522184216316-c3e9a5ef320b?auto=format&fit=crop&w=400&q=80" alt="Parfait" />
+      <p>Parfait – ₦5000 <button class="order-btn">Order</button></p>
+    </div>
+  </section>
+
+  <section id="delivery">
+    <h2>Delivery Information</h2>
+    <p>We deliver within Benin City. Delivery fee ranges from ₦2,500 to ₦10,500 depending on location.</p>
+    <p>Delivery time: 30–60 minutes after order confirmation.</p>
+  </section>
+
+  <section id="payment">
+    <h2>Payment Options</h2>
+    <p><strong>Bank Transfer:</strong></p>
+    <ul>
+      <li><strong>Account Name:</strong> Asazobor Emmanuel Ebosetale</li>
+      <li><strong>Account Number:</strong> 7075293232</li>
+      <li><strong>Bank:</strong> [Insert Bank Name]</li>
+    </ul>
+
+    <p><strong>Online Payment:</strong></p>
+    <button class="btn" onclick="alert('Redirecting to Paystack... (feature coming soon)')">Pay with Paystack</button>
+
+    <p><strong>Order via WhatsApp:</strong></p>
+    <a class="btn" href="https://wa.me/2347075293232?text=Hello%20Jaycee%20Gourmet%2C%20I%20want%20to%20place%20an%20order." target="_blank">Order on WhatsApp</a>
+const name = document.getElementById("name").value.trim();
+      const comment = document.getElementById("comment").value.trim();
+      if (name && comment) {
+        const div = document.createElement("div");
+        div.className = "testimonial";
+        div.innerHTML = `<p>"comment"</p><strong>-{name}</strong>`;
+        document.getElementById("new-reviews").prepend(div);
+        this.reset();
+      }
+    });
+  </script>
+</body>
+</html>
+```
+
+Let me know when you're ready for:
+
+- Hosting it live  
+- Setting up Paystack  
+- Adding more food items or pages
+</section>
+
+  <section id="reviews">
+    <h2>Customer Reviews</h2>
+    <div class="testimonial">
+      <p>"The food tastes like home! Fast delivery too."</p>
+      <strong>- Precious A.</strong>
+    </div>
+    <div class="testimonial">
+      <p>"Highly recommend the parfait and egusi. Very filling and affordable."</p>
+      <strong>- Kelvin O.</strong>
+    </div>
+
+    <h3>Leave a Review</h3>
+    <form id="review-form">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <textarea id="comment" rows="3" placeholder="Your Review" required></textarea>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+    <div id="new-reviews"></div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Location:</strong> Block B, Vegetable Market, Airport Road, Benin City, Edo State</p>
+    <p><strong>Phone:</strong> +234 707 529 3232</p>
+    <p><strong>Email:</strong> jayceegourmet@gmail.com</p>
+    <p><strong>Socials:</strong> @JayceeGourmetRestaurant (Instagram, Facebook, Twitter)</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Jaycee Gourmet Restaurant
+  </footer>
+
+  <script>
+    document.getElementById("review-form").addEventListener("submit", function(e) {
+      e.preventDefault();
